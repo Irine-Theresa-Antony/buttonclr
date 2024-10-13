@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 h-screen flex items-center justify-center">
+    <div class="max-w-lg w-full mx-auto p-6 bg-white rounded-lg shadow-lg">
+        <div class="text-center mt-4">
+            <h1 class="text-2xl font-bold text-red-900">Irine Theresa Antony</h1>
+            <p class="text-gray-600 mt-2">B.Tech Computer Science Student</p>
+        </div>
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2 text-red-900">About Me</h2>
+            <p class="text-gray-700 ">I am a Computer Science student currently pursuing my B.Tech at the Federal Institute of Science and Technology. I have a passion for web development, coding, and creating meaningful digital experiences.</p>
+        </div>
+        <div class="text-center mt-6">
+            <button 
+                class="bg-red-900 text-white font-bold py-2 px-4 rounded hover:bg-red-950 transition duration-300"
+                onclick="changeBackgroundColor()">
+                Change Background
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            document.body.classList.toggle('bg-gray-900');  
+            document.body.classList.toggle('bg-gray-100');   
+        }
+    </script>
+</body>
+</html>
